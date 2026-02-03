@@ -25,7 +25,7 @@ import "fmt"
  * 5. Doesn't allow keyword to become an identifier name.
  * 6. has no limit on the length of the name of the identifier,
  * but it is advisable to use an optimum length of 4–15 letters only. */
-func CallIdentifiers() {
+func GenerateIdentifiers() {
 	var name string = "John Doe"
 	var name2 string = "Jane Doe"
 	var _nickName string = "Johnny"

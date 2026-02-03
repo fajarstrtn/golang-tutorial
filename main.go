@@ -30,5 +30,5 @@ func main() {
 	introduction.Greet()
 	comment.ReadSingleLineComment()
 	comment.ReadMultiLineComment()
-	identifier.CallIdentifiers()
+	identifier.GenerateIdentifiers()
 }

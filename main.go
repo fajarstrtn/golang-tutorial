@@ -37,5 +37,5 @@ func main() {
 	identifier.GenerateIdentifiers()
 
 	// Try to call an exported variable from exported_variable.go file.
-	fmt.Println(identifier.ExportedVariable) // Output: This is an exported variable
+	fmt.Printf("%s called from main function\n", identifier.ExportedVariable) // Output: This is an exported variable called from main function
 }

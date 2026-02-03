@@ -13,5 +13,14 @@ package identifier
  * the other set of the identifiers available in your program,
  * or in the package and they are not exported.
  *
+ * Golang uses Pascal Case (also known as Upper Camel Case) for identifiers
+ * that need to be visible or accessible from other packages (exported).
+ * If an identifier starts with an uppercase letter, it is exported.
+ * It is used for public variables, functions, methods, struct names, and interface names.
+ *
+ * Snake Case (using underscores) is generally discouraged in Golang.
+ * The only exception is for file names, where snake_case.go is acceptable,
+ * although camelCase.go is also common.
+ *
  * The ExportedVariable is recognized and accessible in its package. */
 var ExportedVariable string = "This is an exported variable"

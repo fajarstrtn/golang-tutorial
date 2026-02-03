@@ -24,7 +24,12 @@ import "fmt"
  * 4. Is case-sensitive.
  * 5. Doesn't allow keyword to become an identifier name.
  * 6. has no limit on the length of the name of the identifier,
- * but it is advisable to use an optimum length of 4–15 letters only. */
+ * but it is advisable to use an optimum length of 4–15 letters only.
+ *
+ * Camel Case is the standard convention in Golang.
+ * The first letter of the identifier is lowercase,
+ * and the first letter of subsequent words is uppercase (e.g., userID, parseRequest)
+ * for most identifiers, including private (unexported) variables, functions, and methods. */
 func GenerateIdentifiers() {
 	var name string = "John Doe"
 	var name2 string = "Jane Doe"

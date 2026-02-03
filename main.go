@@ -18,8 +18,6 @@
 // 3. File must be named something.go
 package main
 
-// This imports the standard formatting package of Golang.
-// The fmt package gives you printing (Print, Println, Printf), formatting strings, and reading input.
 import (
 	"github.com/fajarstrtn/golang-tutorial/comment"
 	"github.com/fajarstrtn/golang-tutorial/identifier"
@@ -32,5 +30,5 @@ func main() {
 	introduction.Greet()
 	comment.ReadSingleLineComment()
 	comment.ReadMultiLineComment()
-	identifier.CallIdentifiers() // See identifier.go file in package identifier
+	identifier.CallIdentifiers()
 }

@@ -16,6 +16,7 @@ import "fmt"
  *
  * There are certain valid rules for defining a valid Golang identifier.
  * These rules should be followed, otherwise, we will get a compile-time error.
+ *
  * The name of the identifier:
  * 1. Must begin with a letter or an underscore(_).
  * 2. May contain the letters 'a-z' or 'A-Z' or digits 0-9 as well as the character '_'.

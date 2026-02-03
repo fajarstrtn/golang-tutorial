@@ -19,6 +19,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/fajarstrtn/golang-tutorial/comment"
 	"github.com/fajarstrtn/golang-tutorial/identifier"
 	"github.com/fajarstrtn/golang-tutorial/introduction"
@@ -31,4 +33,7 @@ func main() {
 	comment.ReadSingleLineComment()
 	comment.ReadMultiLineComment()
 	identifier.GenerateIdentifiers()
+
+	// Try to call an exported variable from exported_variable.go file.
+	fmt.Println(identifier.ExportedVariable) // Output: This is an exported variable
 }

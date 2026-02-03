@@ -30,7 +30,7 @@ import (
 // No main() = nothing runs.
 func main() {
 	introduction.Greet()
-	comment.CallSingleLineComment() // Output: Hello John Doe!
-	comment.CallMultiLineComment()  // Output: Hello Jakarta!
-	identifier.CallIdentifiers()    // See identifier.go file in package identifier
+	comment.ReadSingleLineComment()
+	comment.ReadMultiLineComment()
+	identifier.CallIdentifiers() // See identifier.go file in package identifier
 }

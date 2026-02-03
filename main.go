@@ -24,6 +24,7 @@ import (
 	"fmt"
 
 	"github.com/fajarstrtn/golang-tutorial/comment"
+	"github.com/fajarstrtn/golang-tutorial/identifier"
 )
 
 // When you run a program, Go automatically starts executing main().
@@ -32,4 +33,5 @@ func main() {
 	fmt.Println("Hello World!")     // Output: Hello World
 	comment.CallSingleLineComment() // Output: Hello John Doe!
 	comment.CallMultiLineComment()  // Output: Hello Jakarta!
+	identifier.CallIdentifiers()    // See identifier.go file in package identifier
 }

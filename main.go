@@ -23,13 +23,13 @@ package main
 import (
 	"fmt"
 
-	"github.com/fajarstrtn/golang-tutorial/comments"
+	"github.com/fajarstrtn/golang-tutorial/comment"
 )
 
 // When you run a program, Go automatically starts executing main().
 // No main() = nothing runs.
 func main() {
-	fmt.Println("Hello World!")      // Output: Hello World
-	comments.CallSingleLineComment() // Output: Hello John Doe!
-	comments.CallMultiLineComment()  // Output: Hello Jakarta!
+	fmt.Println("Hello World!")     // Output: Hello World
+	comment.CallSingleLineComment() // Output: Hello John Doe!
+	comment.CallMultiLineComment()  // Output: Hello Jakarta!
 }

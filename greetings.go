@@ -19,12 +19,17 @@
 package main
 
 // This imports the standard formatting package of Golang.
-// fmt gives you printing (Print, Println, Printf), formatting strings, and reading input.
-import "fmt"
+// The fmt package gives you printing (Print, Println, Printf), formatting strings, and reading input.
+import (
+	"fmt"
+
+	"github.com/fajarstrtn/golang-tutorial/comments"
+)
 
 // When you run a program, Go automatically starts executing main().
 // No main() = nothing runs.
 func main() {
-	// fmt is the package you imported.
-	fmt.Println("Hello World!") // Output: Hello World
+	fmt.Println("Hello World!")      // Output: Hello World
+	comments.CallSingleLineComment() // Output: Hello John Doe!
+	comments.CallMultiLineComment()  // Output: Hello Jakarta!
 }

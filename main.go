@@ -36,6 +36,8 @@ func main() {
 	comment.ReadMultiLineComment()
 	identifier.GenerateIdentifiers()
 	identifier.GenerateKeywords()
+	identifier.GenerateVariablesUsingVar()
+	identifier.GenerateVariablesUsingShortVarDec()
 
 	// Try to call an exported variable from exported_variable.go file.
 	fmt.Printf("%s called from main function\n", identifier.ExportedVariable) // Output: This is an exported variable called from main function

@@ -31,14 +31,18 @@ import "fmt"
  * and the first letter of subsequent words is uppercase (e.g., userID, parseRequest)
  * for most identifiers, including private (unexported) variables, functions, and methods. */
 func GenerateIdentifiers() {
-	var name string = "John Doe"
-	var name2 string = "Jane Doe"
-	var _nickName string = "Johnny"
-	var full_name string = "John Albert Doe"
+	var name string = "Emerson Santiago"
+	var _nickName string = "Emerson"
+	var Name string = "Lillie Moon"
+	var nickName string = "Moon"
+	var name2 string = "Davis"
+	var full_name string = "Pearl Davis"
 
-	fmt.Println(name)             // Output: John Doe
-	fmt.Println(name2)            // Output: Jane Doe
-	fmt.Println(_nickName)        // Output: Johnny
-	fmt.Println(full_name)        // Output: John Albert Doe
+	fmt.Println(name)             // Output: Emerson Santiago
+	fmt.Println(_nickName)        // Output: Emerson
+	fmt.Println(Name)             // Output: Lillie Moon
+	fmt.Println(nickName)         // Output: Moon
+	fmt.Println(name2)            // Output: Davis
+	fmt.Println(full_name)        // Output: Pearl Davis
 	fmt.Println(ExportedVariable) // Output: This is an exported variable
 }

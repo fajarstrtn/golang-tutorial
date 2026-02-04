@@ -7,14 +7,14 @@ import "fmt"
  * It must be initialized and cannot use := for const.
  *
  * Syntax:
- * const x = 10
- * const y int = 5 */
+ * const X = 10
+ * const Y int = 5 */
 const (
-	FullNameTemplate string = "Full Name: %s (%T)\n"
-	NickNameTemplate string = "Nick Name: %s (%T)\n"
-	AgeTemplate      string = "Age      : %d (%T)\n"
-	AddressTemplate  string = "Address  : %s (%T)\n"
-	IsMaleTemplate   string = "Is Male  : %t (%T)\n"
+	FULLNAME_TEMPLATE string = "Full Name: %s (%T)\n"
+	NICKNAME_TEMPLATE string = "Nick Name: %s (%T)\n"
+	AGE_TEMPLATE      string = "Age      : %d (%T)\n"
+	ADDRESS_TEMPLATE  string = "Address  : %s (%T)\n"
+	ISMALE_TEMPLATE   string = "Is Male  : %t (%T)\n"
 )
 
 /*
@@ -67,11 +67,11 @@ func GenerateVariablesUsingVar() {
 	var address1 string = "Flat 23, 829 Victoria Road, Trading Estate, Nottingham, Northern Ireland, CF8 9QC, United Kingdom"
 	var isMale1 bool = true
 
-	fmt.Printf(FullNameTemplate, fullName1, fullName1) // Output: Full Name: Turner Johnston (string)
-	fmt.Printf(NickNameTemplate, nickName1, nickName1) // Output: Nick Name: Turner (string)
-	fmt.Printf(AgeTemplate, age1, age1)                // Output: Age      : 17 (int8)
-	fmt.Printf(AddressTemplate, address1, address1)    // Output: Address  : Flat 23, 829 Victoria Road, Trading Estate, Nottingham, Northern Ireland, CF8 9QC, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale1, isMale1)       // Output: Is Male  : true (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName1, fullName1) // Output: Full Name: Turner Johnston (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName1, nickName1) // Output: Nick Name: Turner (string)
+	fmt.Printf(AGE_TEMPLATE, age1, age1)                // Output: Age      : 17 (int8)
+	fmt.Printf(ADDRESS_TEMPLATE, address1, address1)    // Output: Address  : Flat 23, 829 Victoria Road, Trading Estate, Nottingham, Northern Ireland, CF8 9QC, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale1, isMale1)       // Output: Is Male  : true (bool)
 
 	// Variables declared and initialized without the explicit type.
 	var fullName2 = "Catherine Flores"
@@ -80,11 +80,11 @@ func GenerateVariablesUsingVar() {
 	var address2 = "Flat 4, 7730 Manor Road, Education Campus, London, Northern Ireland, PJ5 7QE, United Kingdom"
 	var isMale2 = false
 
-	fmt.Printf(FullNameTemplate, fullName2, fullName2) // Output: Full Name: Catherine Flores (string)
-	fmt.Printf(NickNameTemplate, nickName2, nickName2) // Output: Nick Name: Cathie (string)
-	fmt.Printf(AgeTemplate, age2, age2)                // Output: Age      : 16 (int)
-	fmt.Printf(AddressTemplate, address2, address2)    // Output: Address  : Flat 4, 7730 Manor Road, Education Campus, London, Northern Ireland, PJ5 7QE, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale2, isMale2)       // Output: Is Male  : false (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName2, fullName2) // Output: Full Name: Catherine Flores (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName2, nickName2) // Output: Nick Name: Cathie (string)
+	fmt.Printf(AGE_TEMPLATE, age2, age2)                // Output: Age      : 16 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address2, address2)    // Output: Address  : Flat 4, 7730 Manor Road, Education Campus, London, Northern Ireland, PJ5 7QE, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale2, isMale2)       // Output: Is Male  : false (bool)
 
 	/*
 	 * If the expression is removed, then the variable holds zero-value for the type
@@ -106,11 +106,11 @@ func GenerateVariablesUsingVar() {
 	var address3 string
 	var isMale3 bool
 
-	fmt.Printf(FullNameTemplate, fullName3, fullName3) // Output: Full Name:  (string)
-	fmt.Printf(NickNameTemplate, nickName3, nickName3) // Output: Nick Name:  (string)
-	fmt.Printf(AgeTemplate, age3, age3)                // Output: Age      : 0 (int)
-	fmt.Printf(AddressTemplate, address3, address3)    // Output: Address  :  (string)
-	fmt.Printf(IsMaleTemplate, isMale3, isMale3)       // Output: Is Male  : false (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName3, fullName3) // Output: Full Name:  (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName3, nickName3) // Output: Nick Name:  (string)
+	fmt.Printf(AGE_TEMPLATE, age3, age3)                // Output: Age      : 0 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address3, address3)    // Output: Address  :  (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale3, isMale3)       // Output: Is Male  : false (bool)
 
 	/*
 	 * If you use type, then you are allowed to declare multiple variables
@@ -121,20 +121,20 @@ func GenerateVariablesUsingVar() {
 	// If the type keyword is not specified, you can declare different types of variables on the same line.
 	var age4, isMale4 = 17, true
 
-	fmt.Printf(FullNameTemplate, fullName4, fullName4) // Output: Full Name: Dennis James (string)
-	fmt.Printf(NickNameTemplate, nickName4, nickName4) // Output: Nick Name: Dennis (string)
-	fmt.Printf(AgeTemplate, age4, age4)                // Output: Age      : 17 (int8)
-	fmt.Printf(AddressTemplate, address4, address4)    // Output: Address  : Flat 1, 1925 Windsor Road, Market Square, Glasgow, Merseyside, JL5 1BF, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale4, isMale4)       // Output: Is Male  : true (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName4, fullName4) // Output: Full Name: Dennis James (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName4, nickName4) // Output: Nick Name: Dennis (string)
+	fmt.Printf(AGE_TEMPLATE, age4, age4)                // Output: Age      : 17 (int8)
+	fmt.Printf(ADDRESS_TEMPLATE, address4, address4)    // Output: Address  : Flat 1, 1925 Windsor Road, Market Square, Glasgow, Merseyside, JL5 1BF, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale4, isMale4)       // Output: Is Male  : true (bool)
 
 	// The type of variables is determined by the initialized values.
 	var fullName5, nickName5, age5, address5, isMale5 = "Annabella Marsh", "Anne", 16, "Flat 2, 1926 Windsor Road, Market Square, Glasgow, Merseyside, JL5 1BF, United Kingdom", false
 
-	fmt.Printf(FullNameTemplate, fullName5, fullName5) // Output: Full Name: Annabella Marsh (string)
-	fmt.Printf(NickNameTemplate, nickName5, nickName5) // Output: Nick Name: Anne (string)
-	fmt.Printf(AgeTemplate, age5, age5)                // Output: Age      : 16 (int)
-	fmt.Printf(AddressTemplate, address5, address5)    // Output: Address  : Flat 2, 1926 Windsor Road, Market Square, Glasgow, Merseyside, JL5 1BF, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale5, isMale5)       // Output: Is Male  : false (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName5, fullName5) // Output: Full Name: Annabella Marsh (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName5, nickName5) // Output: Nick Name: Anne (string)
+	fmt.Printf(AGE_TEMPLATE, age5, age5)                // Output: Age      : 16 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address5, address5)    // Output: Address  : Flat 2, 1926 Windsor Road, Market Square, Glasgow, Merseyside, JL5 1BF, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale5, isMale5)       // Output: Is Male  : false (bool)
 
 	// You are allowed to initialize a set of variables by the calling function that returns multiple values.
 	var message1, message2 string = greet(fullName5)
@@ -149,11 +149,11 @@ func GenerateVariablesUsingVar() {
 		isMale6   bool   = false
 	)
 
-	fmt.Printf(FullNameTemplate, fullName6, fullName6) // Output: Full Name: Jessica Solis (string)
-	fmt.Printf(NickNameTemplate, nickName6, nickName6) // Output: Nick Name: Jessica (string)
-	fmt.Printf(AgeTemplate, age6, age6)                // Output: Age      : 17 (int8)
-	fmt.Printf(AddressTemplate, address6, address6)    // Output: Address  : Flat 50, 6529 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale6, isMale6)       // Output: Is Male  : false (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName6, fullName6) // Output: Full Name: Jessica Solis (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName6, nickName6) // Output: Nick Name: Jessica (string)
+	fmt.Printf(AGE_TEMPLATE, age6, age6)                // Output: Age      : 17 (int8)
+	fmt.Printf(ADDRESS_TEMPLATE, address6, address6)    // Output: Address  : Flat 50, 6529 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale6, isMale6)       // Output: Is Male  : false (bool)
 
 	var (
 		fullName7 = "Alex Wong"
@@ -163,11 +163,11 @@ func GenerateVariablesUsingVar() {
 		isMale7   = true
 	)
 
-	fmt.Printf(FullNameTemplate, fullName7, fullName7) // Output: Full Name: Alex Wong (string)
-	fmt.Printf(NickNameTemplate, nickName7, nickName7) // Output: Nick Name: Alex (string)
-	fmt.Printf(AgeTemplate, age7, age7)                // Output: Age      : 17 (int)
-	fmt.Printf(AddressTemplate, address7, address7)    // Output: Address  : Flat 1, 6530 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale7, isMale7)       // Output: Is Male  : true (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName7, fullName7) // Output: Full Name: Alex Wong (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName7, nickName7) // Output: Nick Name: Alex (string)
+	fmt.Printf(AGE_TEMPLATE, age7, age7)                // Output: Age      : 17 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address7, address7)    // Output: Address  : Flat 1, 6530 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale7, isMale7)       // Output: Is Male  : true (bool)
 
 	/*
 	 * If the value of a variable is known from the start,
@@ -181,11 +181,11 @@ func GenerateVariablesUsingVar() {
 		isMale8          = true                                                                                            // Type is inferred.
 	)
 
-	fmt.Printf(FullNameTemplate, fullName8, fullName8) // Output: Full Name: Ronin Wolf (string)
-	fmt.Printf(NickNameTemplate, nickName8, nickName8) // Output: Nick Name: Ronin (string)
-	fmt.Printf(AgeTemplate, age8, age8)                // Output: Age      : 16 (int)
-	fmt.Printf(AddressTemplate, address8, address8)    // Output: Address  : Flat 3, 6530 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale8, isMale8)       // Output: Is Male  : true (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName8, fullName8) // Output: Full Name: Ronin Wolf (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName8, nickName8) // Output: Nick Name: Ronin (string)
+	fmt.Printf(AGE_TEMPLATE, age8, age8)                // Output: Age      : 16 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address8, address8)    // Output: Address  : Flat 3, 6530 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale8, isMale8)       // Output: Is Male  : true (bool)
 
 	/*
 	 * It is possible to assign a value to a variable after it is declared.
@@ -204,11 +204,11 @@ func GenerateVariablesUsingVar() {
 	address9 = "Flat 4, 6531 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom"
 	isMale9 = false
 
-	fmt.Printf(FullNameTemplate, fullName9, fullName9) // Output: Full Name: Ruby Friedman (string)
-	fmt.Printf(NickNameTemplate, nickName9, nickName9) // Output: Nick Name: Ruby (string)
-	fmt.Printf(AgeTemplate, age9, age9)                // Output: Age      : 17 (int)
-	fmt.Printf(AddressTemplate, address9, address9)    // Output: Address  : Flat 4, 6531 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale9, isMale9)       // Output: Is Male  : false (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName9, fullName9) // Output: Full Name: Ruby Friedman (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName9, nickName9) // Output: Nick Name: Ruby (string)
+	fmt.Printf(AGE_TEMPLATE, age9, age9)                // Output: Age      : 17 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address9, address9)    // Output: Address  : Flat 4, 6531 Church Street, Housing Estate, Edinburgh, West Midlands, RD3 4MV, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale9, isMale9)       // Output: Is Male  : false (bool)
 
 	// Multiple variable declarations can also be grouped together into a block for greater readability.
 	var (
@@ -221,11 +221,11 @@ func GenerateVariablesUsingVar() {
 
 	address10 = "Flat 40, 7771 Victoria Street, Shopping Centre, Manchester, Wales, HG3 8ZT, United Kingdom"
 
-	fmt.Printf(FullNameTemplate, fullName10, fullName10) // Output: Full Name: Sarah Blair (string)
-	fmt.Printf(NickNameTemplate, nickName10, nickName10) // Output: Nick Name: Sarah (string)
-	fmt.Printf(AgeTemplate, age10, age10)                // Output: Age      : 17 (int)
-	fmt.Printf(AddressTemplate, address10, address10)    // Output: Address  : Flat 40, 7771 Victoria Street, Shopping Centre, Manchester, Wales, HG3 8ZT, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale10, isMale10)       // Output: Is Male  : false (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName10, fullName10) // Output: Full Name: Sarah Blair (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName10, nickName10) // Output: Nick Name: Sarah (string)
+	fmt.Printf(AGE_TEMPLATE, age10, age10)                // Output: Age      : 17 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address10, address10)    // Output: Address  : Flat 40, 7771 Victoria Street, Shopping Centre, Manchester, Wales, HG3 8ZT, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale10, isMale10)       // Output: Is Male  : false (bool)
 }
 
 func GenerateVariablesUsingShortVarDec() {
@@ -246,11 +246,11 @@ func GenerateVariablesUsingShortVarDec() {
 	address1 := "Flat 24, 9260 Windsor Road, Leisure Complex, London, West Yorkshire, LU7 3BD, United Kingdom"
 	isMale1 := false
 
-	fmt.Printf(FullNameTemplate, fullName1, fullName1) // Output: Full Name: Makayla Daugherty (string)
-	fmt.Printf(NickNameTemplate, nickName1, nickName1) // Output: Nick Name: Makkie (string)
-	fmt.Printf(AgeTemplate, age1, age1)                // Output: Age      : 18 (int)
-	fmt.Printf(AddressTemplate, address1, address1)    // Output: Address  : Flat 24, 9260 Windsor Road, Leisure Complex, London, West Yorkshire, LU7 3BD, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale1, isMale1)       // Output: Is Male  : false (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName1, fullName1) // Output: Full Name: Makayla Daugherty (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName1, nickName1) // Output: Nick Name: Makkie (string)
+	fmt.Printf(AGE_TEMPLATE, age1, age1)                // Output: Age      : 18 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address1, address1)    // Output: Address  : Flat 24, 9260 Windsor Road, Leisure Complex, London, West Yorkshire, LU7 3BD, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale1, isMale1)       // Output: Is Male  : false (bool)
 
 	/*
 	 * Using short variable declaration you are allowed to declare multiple variables
@@ -261,11 +261,11 @@ func GenerateVariablesUsingShortVarDec() {
 	// Using short variable declaration you are allowed to declare multiple variables in the single declaration.
 	age2, isMale2 := 17, true
 
-	fmt.Printf(FullNameTemplate, fullName2, fullName2) // Output: Full Name: Jerry Edwards (string)
-	fmt.Printf(NickNameTemplate, nickName2, nickName2) // Output: Nick Name: Jerry (string)
-	fmt.Printf(AgeTemplate, age2, age2)                // Output: Age      : 17 (int)
-	fmt.Printf(AddressTemplate, address2, address2)    // Output: Address  : Flat 25, 9260 Windsor Road, Leisure Complex, London, West Yorkshire, LU7 3BD, United Kingdom (string)
-	fmt.Printf(IsMaleTemplate, isMale2, isMale2)       // Output: Is Male  : true (bool)
+	fmt.Printf(FULLNAME_TEMPLATE, fullName2, fullName2) // Output: Full Name: Jerry Edwards (string)
+	fmt.Printf(NICKNAME_TEMPLATE, nickName2, nickName2) // Output: Nick Name: Jerry (string)
+	fmt.Printf(AGE_TEMPLATE, age2, age2)                // Output: Age      : 17 (int)
+	fmt.Printf(ADDRESS_TEMPLATE, address2, address2)    // Output: Address  : Flat 25, 9260 Windsor Road, Leisure Complex, London, West Yorkshire, LU7 3BD, United Kingdom (string)
+	fmt.Printf(ISMALE_TEMPLATE, isMale2, isMale2)       // Output: Is Male  : true (bool)
 
 	/*
 	 * In a short variable declaration, you are allowed to initialize a set of variables

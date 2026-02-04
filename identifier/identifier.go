@@ -5,6 +5,7 @@ import "fmt"
 /*
  * Identifiers are the user-defined names of the program components.
  * In Golang, an identifier can be a variable name, function name, constant, statement label, package name, or type.
+ * A variable can have a short name (like x and y) or a more descriptive name (e.g., age, price, carname).
  *
  * There is a total of six identifiers available in the code:
  * 1. identifier: Name of the package.
@@ -25,6 +26,13 @@ import "fmt"
  * 5. Doesn't allow keyword to become an identifier name.
  * 6. has no limit on the length of the name of the identifier,
  * but it is advisable to use an optimum length of 4–15 letters only.
+ * 7. Cannot contain spaces.
+ *
+ * Variable names with more than one word can be difficult to read.
+ * There are several techniques you can use to make them more readable:
+ * 1. Camel Case: Each word, except the first, starts with a capital letter (e.g., fullName, graduatedSince).
+ * 2. Pascal Case: Each word starts with a capital letter (e.g., FullName, GraduatedSince).
+ * 3. Snake Case (Uncommon in Golang): Each word is separated by an underscore character (e.g., full_name, graduated_since).
  *
  * Camel Case is the standard convention in Golang.
  * The first letter of the identifier is lowercase,

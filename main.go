@@ -6,17 +6,17 @@
  * The main package means "this is the starting point of my app".
  *
  * The below explanation is a full execution flow of Golang:
- * 1. Go starts the program.
- * 2. Finds package main.
- * 3. Looks for func main().
- * 4. Runs code inside main().
- * 5. Prints "Hello World".
- * 6. Program ends.
+ * 1. Go starts the program
+ * 2. Finds package main
+ * 3. Looks for func main()
+ * 4. Runs code inside main()
+ * 5. Prints "Hello World"
+ * 6. Program ends
  *
  * There are concerns you need to know:
- * 1. No semicolons needed (Go inserts them automatically).
- * 2. Imports must be used; unused imports cause errors.
- * 3. File must be named something.go. */
+ * 1. No semicolons needed (Go inserts them automatically)
+ * 2. Imports must be used; unused imports cause errors
+ * 3. File must be named something.go */
 package main
 
 import (

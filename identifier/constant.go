@@ -15,17 +15,21 @@ const (
 )
 
 /*
- * If a variable should have a fixed value that cannot be changed, you can use the const keyword.
- * The const keyword declares the variable as constant, which means that it is unchangeable and read-only.
+ * If a variable should have a fixed value that cannot be changed,
+ * you can use the const keyword.
+ * The const keyword declares the variable as constant,
+ * which means that it's unchangeable and read-only.
  *
  * Here are constant rules that you must know:
  * 1. Constant names follow the same naming rules as variables.
- * 2. Constant names are usually written in uppercase letters (for easy identification and differentiation from variables).
+ * 2. Constant names are usually written in uppercase letters
+ * (for easy identification and differentiation from variables).
  * 3. Constants can be declared both inside and outside of a function.
  *
  * There are two types of constants:
- * 1. Typed constants (declared with a defined type).
- * 2. Untyped constants (declared without a type and the type of the constant is inferred from the value). */
+ * 1. Typed constants (declared with a defined type)
+ * 2. Untyped constants (declared without a type
+ * and the type of the constant is inferred from the value) */
 func GenerateConstants() {
 	fmt.Println(PI)               // Output: 3.14
 	fmt.Println(SHAPE)            // Output: Circle

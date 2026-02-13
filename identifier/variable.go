@@ -21,29 +21,27 @@ const (
  * Variable is a placeholder of the information which can be changed at runtime.
  *
  * In Golang, variables are created in two different ways:
- * 1. Using var keyword: Variables are created using var keyword
- * of a particular type, connected with name and provide its initial value.
- * 2. Using := (short variable declaration): The local variables which are declared and initialized
- * in the functions are declared by using short variable declaration.
+ * 1. Using var keyword                    : Variables are created using var keyword of a particular type, connected with name and provide its initial value
+ * 2. Using := (short variable declaration): The local variables which are declared and initialized in the functions are declared by using short variable declaration
  *
  * The big difference between var and := (short variable declaration):
  * 1. The var keyword can be used inside and outside functions (at package level).
  * It allows declaration without initialization and is more explicit.
- * Variable declaration and value assignment can be done separately
+ * Variable declaration and value assignment can be done separately.
  * 2. := can be used only inside functions and not be allowed at package level.
- * Variable declaration and value assignment cannot be done separately (must be done in the same line)
+ * Variable declaration and value assignment cannot be done separately (must be done in the same line).
  * It must initialize immediately.
  *
  * When should you use the var keyword:
  * 1. At package level: var appVersion = "1.0.0"
  * 2. You need a default value first: var name string
  * 3. You want explicit type (clarity): var price float64 = 99.99
- * 4. Grouped declarations.
+ * 4. Grouped declarations
  *
  * When should you use := (short variable declaration):
- * 1. Inside functions (default choice).
+ * 1. Inside functions (default choice)
  * 2. Quick, local variables: sum := a + b
- * 3. Loop variables.
+ * 3. Loop variables
  *
  * Golang community rule of thumb: "Use := unless you need var". */
 func GenerateVariablesUsingVar() {
@@ -99,7 +97,9 @@ func GenerateVariablesUsingVar() {
 	 * 4. bool (false)
 	 * 5. pointer, slice, map, chan (nil)
 	 *
-	 * Variables declared and initialized without expression. No undefined like JavaScript. Go hates surprises. */
+	 * Variables declared and initialized without expression.
+	 * No undefined like JavaScript.
+	 * Go hates surprises. */
 	var fullName3 string
 	var nickName3 string
 	var age3 int

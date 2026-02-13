@@ -5,6 +5,7 @@ import "fmt"
 /*
  * Keywords or Reserved Words are the words in a language that are used for
  * some internal process or represent some predefined actions.
+ *
  * These words are therefore not allowed to use as an identifier.
  * Doing this will result in a compile-time error.
  *

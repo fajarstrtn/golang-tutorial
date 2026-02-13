@@ -3,6 +3,7 @@ package identifier
 /*
  * The identifier which is allowed to access it
  * from another package is known as the exported identifier.
+ *
  * The exported identifiers are those identifiers which obey the following condition:
  * 1. The first character of the exported identifier's name
  * should be in the Unicode upper case letter.

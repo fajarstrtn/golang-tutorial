@@ -51,9 +51,9 @@ func PrintSomethingWithNewLine() {
 	 * It converts values to readable text automatically.
 	 *
 	 * When to use:
-	 * 1. Most common choice.
-	 * 2. Quick logging.
-	 * 3. Debugging values.
+	 * 1. Most common choice
+	 * 2. Quick logging
+	 * 3. Debugging values
 	 *
 	 * If you're not sure which one to use, use Println.
 	 *
@@ -81,12 +81,12 @@ func PrintSomethingWithFormattingVerbs() {
 	 * Format verbs start with %.
 	 *
 	 * The following verbs can be used with all data types:
-	 * 1. %v   : Prints the value in the default format.
+	 * 1. %v   : Prints the value in the default format
 	 * 2. %+v  : Prints the value in its default format with the field names
-	 * included when dealing specifically with structs.
-	 * 3. %#v  : Prints the value in Go-syntax format.
-	 * 4. %T   : Prints the type of the value.
-	 * 5. %% : Prints the % sign.
+	 * included when dealing specifically with structs
+	 * 3. %#v  : Prints the value in Go-syntax format
+	 * 4. %T   : Prints the type of the value
+	 * 5. %% : Prints the % sign
 	 *
 	 * The + or # symbol is a flag that modifies the behavior of the general %v verb.
 	 *
@@ -131,17 +131,17 @@ func PrintSomethingWithFormattingVerbs() {
 
 	/*
 	 * The following verbs can be used with the integer data type:
-	 * 1. %b   : Base 2.
-	 * 2. %d   : base 10.
-	 * 3. %+d  : Base 10 and always show sign.
-	 * 4. %o   : Base 8.
-	 * 5. %O   : Base 8 with leading 0o.
-	 * 6. %x   : Base 16 lowercase.
-	 * 7. %X   : Base 16 uppercase.
-	 * 8. %#x  : Base 16 with leading 0x.
-	 * 9. %4d  : Pad with spaces (width 4, right justified).
-	 * 10. %-4d: Pad with spaces (width 4, left justified).
-	 * 11. %04d: Pad with zeroes (width 4). */
+	 * 1. %b   : Base 2
+	 * 2. %d   : base 10
+	 * 3. %+d  : Base 10 and always show sign
+	 * 4. %o   : Base 8
+	 * 5. %O   : Base 8 with leading 0o
+	 * 6. %x   : Base 16 lowercase
+	 * 7. %X   : Base 16 uppercase
+	 * 8. %#x  : Base 16 with leading 0x
+	 * 9. %4d  : Pad with spaces (width 4, right justified)
+	 * 10. %-4d: Pad with spaces (width 4, left justified)
+	 * 11. %04d: Pad with zeroes (width 4) */
 	fmt.Printf("%b\n", x)   // Output: 1010
 	fmt.Printf("%d\n", x)   // Output: 10
 	fmt.Printf("%+d\n", x)  // Output: +10
@@ -156,14 +156,14 @@ func PrintSomethingWithFormattingVerbs() {
 
 	/*
 	 * The following verbs can be used with the string data type:
-	 * 1. %s  : Prints the value as plain string.
-	 * 2. %q  : Prints the value as a double-quoted string.
-	 * 3. %8s : Prints the value as plain string (width 8, right justified).
-	 * 4. %-8s: Prints the value as plain string (width 8, left justified).
-	 * 5. %x  : Prints the value as hex dump of byte values with lowercase.
-	 * 6. %X  : Prints the value as hex dump of byte values with uppercase.
-	 * 7. % x : Prints the value as hex dump with spaces with lowercase.
-	 * 8. % X : Prints the value as hex dump with spaces with uppercase. */
+	 * 1. %s  : Prints the value as plain string
+	 * 2. %q  : Prints the value as a double-quoted string
+	 * 3. %8s : Prints the value as plain string (width 8, right justified)
+	 * 4. %-8s: Prints the value as plain string (width 8, left justified)
+	 * 5. %x  : Prints the value as hex dump of byte values with lowercase
+	 * 6. %X  : Prints the value as hex dump of byte values with uppercase
+	 * 7. % x : Prints the value as hex dump with spaces with lowercase
+	 * 8. % X : Prints the value as hex dump with spaces with uppercase */
 	fmt.Printf("%s\n", text)    // Output: Hello World
 	fmt.Printf("%q\n", text)    // Output: "Hello World"
 	fmt.Printf("%15s\n", text)  // Output:     Hello World
@@ -175,16 +175,16 @@ func PrintSomethingWithFormattingVerbs() {
 
 	/*
 	 * The following verb can be used with the boolean data type:
-	 * 1. %t: Value of the boolean operator in true or false format (same as using %v). */
+	 * 1. %t: Value of the boolean operator in true or false format (same as using %v) */
 	fmt.Printf("%t\n", t) // Output: true
 
 	/*
 	 * The following verbs can be used with the float data type:
-	 * 1. %e   : Scientific notation with 'e' as exponent.
-	 * 2. %f   : Decimal point, no exponent.
-	 * 3. %.2f : Default width, precision 2.
-	 * 4. %6.2f: Width 6, precision 2.
-	 * 5. %g   : Exponent as needed, only necessary digits. */
+	 * 1. %e   : Scientific notation with 'e' as exponent
+	 * 2. %f   : Decimal point, no exponent
+	 * 3. %.2f : Default width, precision 2
+	 * 4. %6.2f: Width 6, precision 2
+	 * 5. %g   : Exponent as needed, only necessary digits */
 	fmt.Printf("%e\n", y)     // Output: 3.141000e+00
 	fmt.Printf("%f\n", y)     // Output: 3.141000
 	fmt.Printf("%.1f\n", y)   // Output: 3.1
@@ -195,14 +195,14 @@ func PrintSomethingWithFormattingVerbs() {
 	 * Think of fmt as Go's text formatting engine.
 	 *
 	 * Main printing functions you'll use:
-	 * 1. fmt.Print* : Prints to stdout (terminal), Returns bytes written.
-	 * 2. fmt.Fprint*: Prints any io.Writer, Returns bytes written.
-	 * 3. fmt.Sprint*: Prints to string, Returns string.
+	 * 1. fmt.Print* : Prints to stdout (terminal), Returns bytes written
+	 * 2. fmt.Fprint*: Prints any io.Writer, Returns bytes written
+	 * 3. fmt.Sprint*: Prints to string, Returns string
 	 *
 	 * Rule of thumb:
-	 * 1. Print  : rare, manual control.
-	 * 2. Println: learning & debugging.
-	 * 3. Printf : structured output.
+	 * 1. Print  : rare, manual control
+	 * 2. Println: learning & debugging
+	 * 3. Printf : structured output
 	 *
 	 * Golden rules to memorize:
 	 * 1. Println: Prints daily debugging

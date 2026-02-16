@@ -9,7 +9,7 @@ import "fmt"
  * These words are therefore not allowed to use as an identifier.
  * Doing this will result in a compile-time error.
  *
- * There are total 25 keywords present in the Golang. */
+ * There are total 25 keywords present in the Go. */
 func GenerateKeywords() {
 	var keywords string = "break, case, chan, const, continue, default, defer, fallthrough, for, func, go, goto, if, import, interface, map, package, range, return, select, struct, switch, type, var"
 

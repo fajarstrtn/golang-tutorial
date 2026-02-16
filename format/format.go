@@ -16,8 +16,8 @@ func PrintSomething() {
 	 * It prints without a newline and doesn't add space automatically.
 	 *
 	 * When to use:
-	 * 1. You want full control over spacing and line breaks.
-	 * 2. Low-level or very simple output. */
+	 * 1. You want full control over spacing and line breaks
+	 * 2. Low-level or very simple output */
 	fmt.Print(message1)
 	fmt.Print(message2)
 
@@ -61,7 +61,7 @@ func PrintSomethingWithNewLine() {
 	 * 1. Detects type
 	 * 2. Applies default formatting
 	 * 3. Converts to string
-	 * 4. Writes to stdout. */
+	 * 4. Writes to stdout */
 	fmt.Println(message1, message2)
 	fmt.Println("Hello", "World")
 	fmt.Println(10, "Hello", true)
@@ -106,7 +106,7 @@ func PrintSomethingWithFormattingVerbs() {
 
 	user := User{"John Doe", 20}
 
-	// Using %v is the same as "use Golang's default rule".
+	// Using %v is the same as "use Go's default rule".
 	fmt.Printf("%v\n", user)
 
 	// It's Go-syntax representation (great for debugging).
@@ -221,13 +221,13 @@ func PrintSomethingWithSprintf() {
 	const fullName, nickName = "John Doe", "John"
 
 	/*
-	 * In Golang, fmt package implements formatted I/O with functions.
-	 * The fmt.Sprintf() function in Golang formats according to
+	 * In Go, fmt package implements formatted I/O with functions.
+	 * The fmt.Sprintf() function in Go formats according to
 	 * a format specifier and returns the resulting string.
 	 *
 	 * It returns a string instead of printing.
 	 *
-	 * You’ll use this for:
+	 * You'll use this for:
 	 * 1. Logs
 	 * 2. Errors
 	 * 3. Building strings
@@ -244,12 +244,11 @@ func PrintSomethingWithSprintf() {
 }
 
 func PrintSomethingWithLog() {
-	logMessage := "User has been created"
-
 	/*
-	 * For real apps:
-	 * 1. Adds timestamp
-	 * 2. Writes to stderr
-	 * 3. Better for production */
+	* For real apps:
+	* 1. Adds timestamp
+	* 2. Writes to stderr
+	* 3. Better for production */
+	logMessage := "User has been created"
 	log.Println(logMessage) // Output: 2026/02/10 16:30:31 User has been created
 }

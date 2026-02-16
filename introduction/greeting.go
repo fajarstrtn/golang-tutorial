@@ -1,7 +1,7 @@
 package introduction
 
 /*
- * This imports the standard formatting package of Golang.
+ * This imports the standard formatting package of Go.
  * The fmt package gives you printing, formatting strings, and reading input. */
 import "fmt"
 

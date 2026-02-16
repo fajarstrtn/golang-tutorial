@@ -1,11 +1,11 @@
 /*
- * Every Golang file must belong to a package.
+ * Every Go file must belong to a package.
  * This main keyword is special because this program is meant to be run, not imported.
  * If you want to build an executable (e.g., go run, go build), the package must be main.
  * Think of a package as a folder of related code.
  * The main package means "this is the starting point of my app".
  *
- * The below explanation is a full execution flow of Golang:
+ * The below explanation is a full execution flow of Go:
  * 1. Go starts the program
  * 2. Finds package main
  * 3. Looks for func main()
@@ -29,8 +29,8 @@ import (
 )
 
 /*
- * When you run a program, Golang automatically starts executing main function.
- * No main function = nothing runs. */
+ * When you run a program, Go automatically starts executing main function.
+ * No main function means nothing runs. */
 func main() {
 	introduction.Greet()
 	comment.ReadSingleLineComment()

@@ -20,9 +20,11 @@ const (
 /*
  * Variable is a placeholder of the information which can be changed at runtime.
  *
- * In Golang, variables are created in two different ways:
- * 1. Using var keyword                    : Variables are created using var keyword of a particular type, connected with name and provide its initial value
- * 2. Using := (short variable declaration): The local variables which are declared and initialized in the functions are declared by using short variable declaration
+ * In Go, variables are created in two different ways:
+ * 1. Using var keyword                    : Variables are created using var keyword of a particular type,
+ * connected with name and provide its initial value
+ * 2. Using := (short variable declaration): The local variables which are declared and initialized
+ * in the functions are declared by using short variable declaration
  *
  * The big difference between var and := (short variable declaration):
  * 1. The var keyword can be used inside and outside functions (at package level).
@@ -43,7 +45,7 @@ const (
  * 2. Quick, local variables: sum := a + b
  * 3. Loop variables
  *
- * Golang community rule of thumb: "Use := unless you need var". */
+ * Go community rule of thumb: "Use := unless you need var". */
 func GenerateVariablesUsingVar() {
 	/*
 	 * The var declaration of variables are used for those local variables
@@ -88,9 +90,9 @@ func GenerateVariablesUsingVar() {
 	 * If the expression is removed, then the variable holds zero-value for the type
 	 * like 0 for number, false for boolean, "" for string, and nil for interface and reference type.
 	 *
-	 * There is no such concept of an uninitialized variable in Golang.
+	 * There is no such concept of an uninitialized variable in Go.
 	 *
-	 * Here is the list of default value in Golang:
+	 * Here is the list of default value in Go:
 	 * 1. int (0)
 	 * 2. float64 (0.0)
 	 * 3. string (empty string)
@@ -268,7 +270,8 @@ func GenerateVariablesUsingShortVarDec() {
 	fmt.Printf(ISMALE_TEMPLATE, isMale2, isMale2)       // Output: Is Male  : true (bool)
 
 	/*
-	 * In a short variable declaration, you are allowed to initialize a set of variables
+	 * In a short variable declaration,
+	 * you are allowed to initialize a set of variables
 	 * by the calling function that returns multiple values. */
 	message1, message2 := greet(fullName2)
 	fmt.Println(message1) // Output: Hello, Jerry Edwards!

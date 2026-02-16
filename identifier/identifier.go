@@ -4,7 +4,7 @@ import "fmt"
 
 /*
  * Identifiers are the user-defined names of the program components.
- * In Golang, an identifier can be a variable name, function name,
+ * In Go, an identifier can be a variable name, function name,
  * constant, statement label, package name, or type.
  *
  * A variable can have a short name (like x and y)
@@ -18,7 +18,7 @@ import "fmt"
  * 5. _nickName      : Name of the variable
  * 6. full_name      : Name of the variable
  *
- * There are certain valid rules for defining a valid Golang identifier.
+ * There are certain valid rules for defining a valid Go identifier.
  * These rules should be followed, otherwise, we will get a compile-time error.
  *
  * The name of the identifier:
@@ -35,9 +35,9 @@ import "fmt"
  * There are several techniques you can use to make them more readable:
  * 1. Camel Case                     : Each word, except the first, starts with a capital letter (e.g., fullName, graduatedSince).
  * 2. Pascal Case                    : Each word starts with a capital letter (e.g., FullName, GraduatedSince).
- * 3. Snake Case (Uncommon in Golang): Each word is separated by an underscore character (e.g., full_name, graduated_since).
+ * 3. Snake Case (Uncommon in Go)    : Each word is separated by an underscore character (e.g., full_name, graduated_since).
  *
- * Camel Case is the standard convention in Golang.
+ * Camel Case is the standard convention in Go.
  * The first letter of the identifier is lowercase,
  * and the first letter of subsequent words is uppercase (e.g., userID, parseRequest)
  * for most identifiers, including private (unexported) variables, functions, and methods. */

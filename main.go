@@ -50,6 +50,10 @@ func main() {
 	data_types.GenerateStrings()
 	data_types.GenerateBooleans()
 
-	// Try to call an exported variable from exported_variable.go file.
+	callExportedVariable()
+}
+
+// Try to call an exported variable from exported_variable.go file.
+func callExportedVariable() {
 	fmt.Printf("%s called from main function\n", identifier.ExportedVariable) // Output: This is an exported variable called from main function
 }

@@ -23,6 +23,7 @@ import (
 	"fmt"
 
 	"github.com/fajarstrtn/golang-tutorial/comment"
+	"github.com/fajarstrtn/golang-tutorial/data_types"
 	"github.com/fajarstrtn/golang-tutorial/format"
 	"github.com/fajarstrtn/golang-tutorial/identifier"
 	"github.com/fajarstrtn/golang-tutorial/introduction"
@@ -45,6 +46,9 @@ func main() {
 	format.PrintSomethingWithFormattingVerbs()
 	format.PrintSomethingWithSprintf()
 	format.PrintSomethingWithLog()
+	data_types.GenerateNumbers()
+	data_types.GenerateStrings()
+	data_types.GenerateBooleans()
 
 	// Try to call an exported variable from exported_variable.go file.
 	fmt.Printf("%s called from main function\n", identifier.ExportedVariable) // Output: This is an exported variable called from main function

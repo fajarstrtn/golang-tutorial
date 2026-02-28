@@ -56,8 +56,10 @@ func GenerateVariablesUsingVar() {
 	 * The type of the variable is determined by the type of the expression.
 	 *
 	 * In the below syntax, either type or = expression can be omitted, but not both.
-	 * If the type is removed, then the type of the variable is determined by the value-initialize in the expression.
-	 * If the "= expression" is omitted, then the variable value is determined by its type's default value.
+	 * If the type is removed, then the type of the variable is determined
+	 * by the value-initialize in the expression.
+	 * If the "= expression" is omitted, then the variable value is determined
+	 * by its type's default value.
 	 * The default value is usually 0.
 	 *
 	 * The var keyword is very common at package level. */
@@ -88,8 +90,8 @@ func GenerateVariablesUsingVar() {
 
 	/*
 	 * If the expression is removed, then the variable holds zero-value for the type
-	 * like 0 for number, false for boolean, "" for string, and nil for interface and reference type.
-	 *
+	 * like 0 for number, false for boolean, "" for string,
+	 * and nil for interface and reference type.
 	 * There is no such concept of an uninitialized variable in Go.
 	 *
 	 * Here is the list of default value in Go:
@@ -100,8 +102,7 @@ func GenerateVariablesUsingVar() {
 	 * 5. pointer, slice, map, chan (nil)
 	 *
 	 * Variables declared and initialized without expression.
-	 * No undefined like JavaScript.
-	 * Go hates surprises. */
+	 * No undefined like JavaScript. Go hates surprises. */
 	var fullName3 string
 	var nickName3 string
 	var age3 int

@@ -7,6 +7,18 @@ import (
 
 func getStrings() {
 	/*
+	 * First thing to note is that a UTF-8 encoded string
+	 * can be made of any character in Unicode.
+	 * Since UTF-8 supports up to 4 bytes long character,
+	 * this means a character's length could be anywhere between 1 to 4 bytes.
+	 * Second thing to note is interestingly in Go, strings are immutable slices of bytes.
+	 * This means if the character "å" takes up 3 bytes when encoded in UTF-8 standard,
+	 * it will occupy 3 indices in string array and index 2 will return only part of this character.
+	 * This means if we iterate through a string using its indices,
+	 * we'd get the byte value of that index.
+	 * This is no good when we want to compare characters
+	 * to validate a palindrome as we need the entire character.
+	 *
 	 * A string is a sequence of bytes.
 	 * A string is UTF-8 encoded and immutable (you cannot modify a string directly).
 	 *  */

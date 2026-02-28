@@ -10,13 +10,15 @@ import "fmt"
  * A variable can have a short name (like x and y)
  * or a more descriptive name (e.g., age, price, carname).
  *
- * There is a total of six identifiers available in the code:
+ * There is a total of eight identifiers available in the code:
  * 1. identifier     : Name of the package
  * 2. CallIdentifiers: Name of the function
  * 3. name           : Name of the variable
- * 4. name2          : Name of the variable
- * 5. _nickName      : Name of the variable
- * 6. full_name      : Name of the variable
+ * 4. _nickName      : Name of the variable
+ * 5. Name           : Name of the variable
+ * 6. nickName       : Name of the variable
+ * 7. name2          : Name of the variable
+ * 8. full_name      : Name of the variable
  *
  * There are certain valid rules for defining a valid Go identifier.
  * These rules should be followed, otherwise, we will get a compile-time error.
@@ -39,8 +41,9 @@ import "fmt"
  *
  * Camel Case is the standard convention in Go.
  * The first letter of the identifier is lowercase,
- * and the first letter of subsequent words is uppercase (e.g., userID, parseRequest)
- * for most identifiers, including private (unexported) variables, functions, and methods. */
+ * and the first letter of subsequent words is uppercase
+ * (e.g., userID, parseRequest) for most identifiers,
+ * including private (unexported) variables, functions, and methods. */
 func GenerateIdentifiers() {
 	var name string = "Emerson Santiago"
 	var _nickName string = "Emerson"

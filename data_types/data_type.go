@@ -97,6 +97,7 @@ func GenerateNumbers() {
  * Generally, strings are enclosed in double-quotes (""). */
 func GenerateStrings() {
 	getStrings()
+	manipulateStrings()
 }
 
 /*

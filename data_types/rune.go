@@ -74,6 +74,7 @@ func getRune() {
 	str := "Aあ"
 	fmt.Println(len(str)) // Output: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	/*
 	 * Output:
@@ -87,11 +88,6 @@ func getRune() {
 		fmt.Printf("%v\n", string(r))
 		fmt.Printf("%v\n", r)
 		fmt.Printf("%T\n", r)
-=======
-	for _, r := range str {
-		fmt.Printf("%v\n", string(r)) // Output: A\nあ
->>>>>>> ee6370a (fix: modify rune.go file)
-	}
 
 	var emoji rune = '😀'
 	fmt.Println(emoji)        // Output: 128512

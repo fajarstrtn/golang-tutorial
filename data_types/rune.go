@@ -73,8 +73,6 @@ func getRune() {
 	// A for 1 byte and あ for 3 bytes.
 	str := "Aあ"
 	fmt.Println(len(str)) // Output: 4
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 	/*
 	 * Output:
